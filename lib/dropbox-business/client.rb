@@ -23,6 +23,10 @@ module DropboxForBusiness
       @reports ||= Collections::Reports.new(connection)
     end
 
+    def log
+      @log ||= Collections::Log.new(connection)
+    end
+
   end
 
 end
